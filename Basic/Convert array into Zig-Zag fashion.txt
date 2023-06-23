@@ -1,4 +1,5 @@
 // Convert array into Zig-Zag fashion
+// question Link :- https://practice.geeksforgeeks.org/problems/convert-array-into-zig-zag-fashion1638/1
 
 void zigZag(int arr[], int n) {
         // code here
