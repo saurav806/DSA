@@ -14,3 +14,5 @@ void zigZag(int arr[], int n) {
             }
         }
     }
+
+//Author Saurav Singh
