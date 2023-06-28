@@ -1,0 +1,30 @@
+//Link:- https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string2041/1
+
+
+class Solution
+{
+	public:
+	    void pmt(string S,set<string>&ans,int i){
+	        if(S.size()==i){
+	            ans.insert(S);
+	            return;
+	        }
+	            
+	       for(int it=i;it<S.size();it++){
+	           swap(S[it],S[i]);
+	           pmt(S,ans,i+1);
+	           swap(S[it],S[i]);
+	       }
+	    }
+	
+		vector<string>find_permutation(string S)
+		{
+		    // Code here there
+		    set<string> ans;
+		    pmt(S,ans,0);
+		    
+		    vector<string>result;
+		    result.assign(ans.begin(),ans.end());
+		    return result;
+		}
+};
