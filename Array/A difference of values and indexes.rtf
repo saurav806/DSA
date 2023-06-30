@@ -1,0 +1,35 @@
+Easy Explanation in Hindi.
+
+https://youtu.be/KWjBln7Na-M
+
+Click here for C++ JAVA Code.
+
+Hint :-
+
+Just Try to break the modulus in given equation.
+
+Property of Modulus :-
+
+Evaluate | a - b |
+
+Case 1 :- (a-b) ; a>b
+
+Case 2 :- (b-a) ; a<=b
+
+Now,
+
+Given Equation :- | a[i] - a[j] | + | i - j |
+
+=> | a[i] - a[j] | + ( j - i )  ; given i<=j
+
+Case1 :- ( a[i] - a[j] ) + ( j - i ) => ( a[i] - i ) - ( a[j] - j )
+
+Case 2 :- ( a[j] - a[i] ) + ( j - i ) => ( a[j] + j ) - ( a[i] + i )
+
+ 
+
+Now let's evaluate for each index,maximum possible maxDistance.
+
+To maximize Case 1 Equation Value, we have to maximize ith index value ( i.e , a[i]-i ).
+
+To maximize Case 2 Equation Value , we have to minimize ith index value ( i.e , a[i]+i).
