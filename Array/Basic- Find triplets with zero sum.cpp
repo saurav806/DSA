@@ -12,17 +12,17 @@ class Solution{
     { 
         //Your code here
         sort(arr,arr+n);
-        for(int i=0;i<n;i++){
-            int j=i+1;
-            int k=n-1;
-            while(j<k){
-                int sum=arr[i]+arr[j]+arr[k];
+        for(int start=0;start<n-2;start++){
+            int third=start+1;
+            int end=n-1;
+            while(third<end){
+                int sum=arr[start]+arr[end]+arr[third];
                 if(sum==0)
                     return true;
-                else if(sum>0)
-                    k--;
+                if(sum>0)
+                    end--;
                 else
-                    j++;
+                    third++;
             }
         }
         return false;
