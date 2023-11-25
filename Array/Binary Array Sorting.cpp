@@ -22,7 +22,5 @@ class Solution{
           if(A[end]==1)
             end--;
       }
-      
-        
     }
 };
